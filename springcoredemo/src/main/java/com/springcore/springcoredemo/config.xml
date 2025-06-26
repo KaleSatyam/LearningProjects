@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--  		this is our bean -->
+ 		<bean  class="com.springcore.springcoredemo.student" name="student">
+ 				<property name="studentId" value="2552115"/>
+ 				<property name="studentName" value="satyam kale"/>
+ 				<property name="studentAddress" value="pune"/>
+ 		</bean>
+ 		
+ 		<bean class="com.springcore.springcoredemo.course" name="course1">
+ 			<property name="names">
+ 			<list>
+ 					<value>java</value>
+ 					<value>python</value>
+ 					<value>c++</value>			
+ 			</list>
+ 			
+ 			</property>
+ 				
+ 				<property name="names1">
+ 				<set>
+ 				<value>java1</value>
+ 				<value>python1</value>
+ 				<value>c++1</value>
+ 				</set>
+ 				</property>
+ 				
+ 				<property name="names2">
+ 				<map>
+ 				<entry key="1" value="java3" />
+ 				<entry key="2" value="python3" />
+ 				<entry key="3" value="cpp3" />
+ 				
+ 				</map>
+ 				</property>
+ 				
+ 				<property name="prop">
+ 				<props>
+ 				<prop key="language">java is oops language</prop>
+ 				<prop key="usefor">used for development of enterprise application</prop>
+ 				<prop key="independent">java is open source</prop>
+ 				</props>
+ 				</property>
+ 		</bean>
+ 		
+ 		
+ </beans>

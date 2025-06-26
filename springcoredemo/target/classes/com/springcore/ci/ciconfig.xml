@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:c="http://www.springframework.org/schema/c"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ 
+ http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean class="com.springcore.ci.Certi" name="certi" c:name="java is most popular programming language">
+	
+</bean>
+
+
+<bean class="com.springcore.ci.person" name="person" c:pname="satyam" c:pId="12255" c:centi-ref="certi">
+<constructor-arg>
+<list>
+<value>dog</value>
+<value>cat</value>
+<value>bear</value>
+</list>
+</constructor-arg>
+
+
+<!-- <constructor-arg> -->
+<!-- 	<value>satyam</value> -->
+<!-- 	</constructor-arg> -->
+<!-- 	<constructor-arg > -->
+<!-- 	<value>25552</value> -->
+<!-- 	</constructor-arg> -->
+	
+<!-- 	<constructor-arg> -->
+<!-- 	<ref bean="certi" /> -->
+<!-- 	</constructor-arg> -->
+ 		
+ 		</bean> 		
+ 		
+ </beans>
