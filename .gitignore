@@ -1,15 +1,27 @@
-.metadata
-.classpath
-.project
-.settings/
-/target/
-.classpath
-.project
-.settings/
+# IDE and Editor settings
+.vscode/
 .idea/
 *.iml
 *.ipr
 *.iws
+
+# Eclipse settings
+.metadata/
+.project
+.classpath
+.settings/
+
+# Build output
+target/
+bin/
+build/
+out/
+
+# Java archives
 *.jar
 *.war
 *.ear
+
+# OS-specific files
+.DS_Store
+Thumbs.db
