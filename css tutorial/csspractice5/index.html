@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size position list</title>
+
+    <style>
+        .container{
+            font-size: 10vh;
+            /* position: relative; */
+            
+        }
+        .box1  {
+            font-size: 20px;
+            background-color: aqua;
+            width: 50vw;
+        }
+        .box2{
+            font-size: 30px;
+            background-color: blueviolet;
+            width: 40vw;
+        }
+        .minmax{
+            width: 350px;
+            height: 45vh;
+            background-color: tomato;
+            min-height: 60vh;
+
+        }
+        .contan p{  
+            background-color: yellow;
+            
+            font-size: 3vh;
+        }
+        .contan
+        {
+            width: 50vw ;          
+            height: 80vh;    
+            background-color: yellow;
+            margin: auto;
+            /* position: relative; */
+           
+        }
+        .p1{
+            font-size: 30px;
+            width: 200px ;
+            height: 200px ;
+            background-color: palegreen;
+            /* position: relative; */
+            /* position: absolute; */
+            position: fixed;
+            top: 134px;
+            left: 212.8px;
+            z-index: -1; 
+            
+
+        }
+        .p2{
+            font-size: 30px;
+            width: 200px ;
+            height: 200px ;
+            background-color: blue;
+          }
+
+
+    </style>
+</head>
+<body>
+    <div class="container ">
+        this is units container
+        <div class="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam harum voluptatibus ab, aliquid vero id! Animi consectetur, libero quibusdam nesciunt esse optio sint?
+        </div>
+        <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate eum, voluptatum sapiente aperiam veniam et. Sapiente, dolorum commodi provident temporibus voluptates ex distinctio reiciendis molestias placeat enim incidunt beatae nihil, in ullam voluptas.    
+        </div>
+
+    </div>
+   
+    <div class="container">
+        this is min max height width
+    </div>
+
+    <div class="minmax">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nihil ratione cupiditate, animi itaque recusandae excepturi, ut veniam, autem placeat quidem dolores impedit reiciendis nostrum accusamus. Quod, repellat similique! Voluptates?
+    </div>
+
+    <div class="contan">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi voluptates, mollitia distinctio cumque dolore, repellat labore, eos laudantium porro aliquid odit neque nostrum sapiente numquam exercitationem molestiae quos. Mollitia, quidem.</p>
+        <div class="p1">
+            iam box container
+        </div> 
+        <div class="p2">
+            iam box2 container
+        </div> 
+
+    </div>
+        
+
+</body>
+</html>

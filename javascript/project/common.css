@@ -1,0 +1,27 @@
+.span
+{
+    
+    font-size: 40px; font-style: italic; 
+    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.jumbotron
+{
+    background: #ff4b1f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1fddff, #ff4b1f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1fddff, #ff4b1f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.tit
+{
+    height: 50px;
+    width: 460px;
+}
+.container{
+    margin: auto;
+    text-align: center;
+    border-style: dashed;
+    border-color: rgb(240, 149, 13);
+    padding: 10px;
+   
+}
+

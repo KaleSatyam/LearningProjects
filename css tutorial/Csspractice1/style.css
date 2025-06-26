@@ -1,0 +1,15 @@
+h1,h2{
+    color: red;
+    background-color: antiquewhite;
+    border: black 2px solid;
+}
+
+h3.black{
+    color: orangered;
+    background-color: ivory;
+    border: 3px solid rgb(106, 0, 128);
+}
+/* *{ */
+    /* margin: 0%; */
+    /* padding: 0%; */
+/* } */

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+    background-color: rgb(31, 14, 48);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .counter-container{
+        position: relative;
+        top: 300px;
+    }
+    .fa{
+        color: rgb(196, 213, 233);
+        margin-bottom: 10px;
+    }
+    span{
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(184, 212, 243);
+     
+    }
+    .counter{
+        font-size: 40px;
+        color: gold;
+        margin-bottom: 10px;
+    }
+
+</style>
+<body>
+
+    <div class="counter-container">
+        <i class="fa fa-coffee fa-5x" aria-hidden="true"></i>
+        <div class="counter" data-target="4000">0</div>
+        <span>Project Completed</span>
+    </div>
+    
+    <div class="counter-container">
+        <i class="fa fa-users fa-5x" aria-hidden="true"></i>
+        <div class="counter" data-target="15000"></div>
+        <span>Happy clients</span>
+    </div>
+
+    <div class="counter-container">
+        <i class="fa fa-tasks fa-5x" aria-hidden="true"></i>
+        <div class="counter" data-target="500"></div>
+        <span>ongoing projects</span>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

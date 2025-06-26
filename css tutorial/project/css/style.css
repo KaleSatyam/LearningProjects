@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main-bg-color{
+    background-color: #2874f0;
+}
+
+footer{
+    height: 50px;
+    width: 100vw;
+    background-color: #2874f0;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+header{
+    width: 100vw;
+    background-color: #2874f0;
+}
+header nav ul li{
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+nav ul li a:hover{
+font-weight: bold;
+
+}
+
+nav ul{
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    /* padding: 0 5px 0 0; */
+    padding: 0 23px;
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+nav div img{
+    width: 85px;
+    padding: 0px 30px;
+}
+.container{
+    min-height: calc(100vh - 85px - 50px);
+}
+.search input{
+    width: 30vw;
+    height: 40px;
+    border-radius: 8px;
+    margin: 0 40px;
+    padding: 0 10px;
+}
+.search{
+    display: flex;
+align-items: center;
+
+}
+.btn{
+    background: var(--main-bg-color);
+    padding: 5px 10px;
+    border: 2px solid white;
+     font-weight: bold;
+     border-radius: 4px;
+      font-family: 'baloo bhai';
+      font-size: 15px;
+
+}
+.btn:hover{
+    padding: 6px 11px;
+    cursor: pointer;
+    
+}
+.container .slide img{
+    height: 400px;
+    width: 1300px;
+}
+.slide{
+   width:85vw ;
+   margin:10px auto;
+   overflow: hidden;
+
+}
+.content{
+  
+    width: 91vw;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box1 img{
+    width: 200px;
+    height: 200px;
+}
+.box1{
+    
+    display:inline-flex;
+    flex-direction: column;
+    align-content: center;
+        margin: 0 10px;
+    /* width: 10vw; */
+    margin-bottom: 5px; 
+}

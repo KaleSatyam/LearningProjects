@@ -1,0 +1,17 @@
+.container{
+    height: 230px;  
+    width: 400px;
+    background: rgb(212, 57, 57);
+    /* margin: 15px; */
+    /* margin: 5px 4px 3px 1px  ; */
+    margin: 10px  5px;
+    padding: 12px;
+    border: 3px solid rgba(17, 187, 17, 0.671);
+    border-radius: 20px;
+
+}
+*{
+    margin: 0;
+    padding: 0%;
+
+}

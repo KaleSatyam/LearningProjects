@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .progress{
+    border: 3px solid aqua;
+
+    animation-name: progressanimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    
+    }
+    header{
+        height: 80px;
+        width: 100vw;
+        background-color: cadetblue;
+
+    }
+    body  {
+        background-color:  brown;
+    }
+
+    @keyframes progressanimate {
+
+       /* from{
+            width: 1vw;
+
+        }
+        to{
+            width: 100vw;
+        } 
+        */
+
+        0%{
+            width: 0;
+
+        }
+        50%{
+            width: 60vw;
+        }
+        100%{
+            width:100vw ;
+        }
+    }
+
+</style>
+<body>
+    <div class="progress">
+
+    </div>
+    <header>
+
+    </header>
+    <div  class="main">
+    
+    </div>    
+</body>
+</html>

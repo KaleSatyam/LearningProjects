@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my node app</title>
+</head>
+<style>
+    body {
+        background: rgb(6, 51, 30);
+        text-align: center;
+    }
+
+    button {
+        padding: 20px 20px;
+        font-size: 20px;
+        background: rgb(206, 203, 25);
+        color: aliceblue;
+        border-radius: 10px;
+        border: none;
+    }
+    p{
+        color: white;
+        font-size: 40px;
+    }
+</style>
+
+<body>
+    <p class="text">this is my first node js example</p>
+    <p class="text">iam satyam</p>
+
+    <p id="change"> this is dynamic text</p>
+    <button type="button" onclick="clickme()" class="btn btn-primary">button</button>
+    <button type="button"  id="second" >button event way</button>
+
+    <div>
+        <p>know my name here click Me 👇👇👇 count starts </p>
+        <p id="myname"></p>
+
+        <button type="button" id="btn">clickMe</button>
+        <button type="button" class="stop">clickMe</button>
+    </div>
+
+</body>
+<script>
+   /* let clickme = () => {
+        let elem = document.getElementById("change").style.color = "yellow"
+
+
+        let head = document.getElementsByClassName(text).style.color = "yellow"
+
+        //let t1=document.querySelector('.text').style.color="yellow"
+
+        let t = document.querySelectorAll('.text')
+        console.log(document.getElementById("change").innerHTML)
+        console.log(elem)
+        console.log(t1.style.color = "yellow")
+
+    }
+ 
+      let second=document.getElementById('second').onclick=function(){
+            alert("iam satyam")
+          }
+        
+        
+          second.onclick=function(){
+            alert("iam satyam")
+          }
+
+         const  btn=document.querySelector('#second');
+          btn.addEventListener('click',( )=>{
+              alert("i clicked button again")
+          })
+          
+    
+          let myname=document.querySelector('#myname')
+        let btn=document.getElementById('btn')
+
+        let showmyname=()=>{
+
+            myname.innerHTML="Loading 👻👻"
+            setTimeout(()=>{
+                    myname.innerHTML="Satyam Kale"
+            }, 2000 )
+        
+        }
+
+        btn.addEventListener('click',showmyname);*/
+
+
+        let myname=document.querySelector('#myname')
+        let btn=document.getElementById('btn')
+        let stop=document.querySelector('.stop')
+        
+        let stopcount;
+        let count=0;
+
+        let showmyname=()=>{
+
+           stopcount= setInterval(()=>{
+
+                myname.innerHTML=`${count}`;
+                count++
+            },1000)
+            
+        
+        }
+
+        stop.addEventListener('click',()=>{
+            clearInterval(stopcount);
+        })
+
+        btn.addEventListener('click',showmyname);
+
+
+</script>
+
+</html>

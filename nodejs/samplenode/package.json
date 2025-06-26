@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-course",
+  "version": "1.0.0",
+  "description": "this is crastjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Satyam kale",
+  "license": "ISC",
+  "dependencies": {
+    "cli-color": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

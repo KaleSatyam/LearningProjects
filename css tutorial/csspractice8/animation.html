@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+
+    <style>
+
+        body{
+            background: gainsboro;
+        }
+        .box
+        {
+         /*   width: 10vh;
+            height: 10vh;
+            background-color: blueviolet;
+            animation-name: animate;
+            animation-duration: 5s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 3;
+            animation-delay: 2s;
+            animation-direction: reverse;
+            */
+
+
+
+            width: 50vh;
+            height: 50vh;
+            background-color:burlywood;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            margin: 100px auto;
+            
+
+            animation-name: animate;
+            animation-duration: .5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        
+        }
+
+        @keyframes animate {
+         /*   from{
+                width: 100px;
+            }
+            to{
+                width: 500px;
+                height: 500px;
+            }
+            from{
+                height: 800px;
+            }*/
+
+            from{
+                width: 50vh;
+                height: 50vh;
+                transform: rotateZ(1turn);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis repellat repellendus voluptatum necessitatibus voluptatem mollitia quae consectetur repudiandae iusto explicabo, dolorem molestias nostrum ab architecto labore, quod odio, ut a!
+
+        </div>
+    </div>
+    
+</body>
+</html>

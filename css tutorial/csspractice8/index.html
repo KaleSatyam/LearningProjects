@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container  {
+        width: 99vw;
+        height: 80vh;
+        background-color: darkgoldenrod;
+    }
+    .box1{
+        background-image: url('./48087.jpg') ;
+        /* background-size: 300px 300px; */
+      background-size: contain;
+      background-repeat: no-repeat;
+        height: 200px;
+        width: 600px;
+        
+        /* transform: translate(56px);     */
+        /* transform: translate(200px,100px) rotateX(2deg); */
+        /* transform: translate(200px,100px) rotate(5deg); */
+
+             /* transform: scaleX(3); */
+         /* transform: scaleY(3); */
+         /* transform: skew(10deg,10deg); */
+         /* transform: translate(200px,100px) rotateX(71deg); */
+         /* transform: translate(200px,100px) rotatey(72deg); */
+         transform: translate(200px,100px) rotateZ(72deg);
+
+        /* display: none; */
+    }
+
+    .box2{
+        transform: translate(20px,10px) rotate(4deg);
+        border: 2px solid black;
+         /* transform-origin: center; rotate from center */
+         transform-origin: 0;     
+         /* transform: scaleX(3); */
+         /* transform: scaleY(3); */
+         /* transform: skew(4deg,2deg); */
+         display: none;
+    }
+    .box3 img{
+        width: 400px;
+        height: 400px;
+        }
+    img:hover{
+        width: 50px;
+
+    }
+    img{
+        
+       /* transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 2s;*/
+        transition: width 3s ease-in 1s, height 3s ease-in 3s;
+    }
+
+</style>
+<body>
+    
+    
+    <div class="container">
+        <!-- <div class="box1">
+
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatem inventore nulla. Quisquam in ducimus aut reprehenderit eum dolorem, quod quasi provident illo et soluta accusantium praesentium maxime sit magni?
+        </div> -->
+        <div class="box3">
+            <img id="myimg" src="/48087.jpg" alt="" srcset="">
+        </div>
+        <button id="btn" > tiggle</button>
+        <button id="reset">reset</button>
+    </div>
+</body>
+<script>
+btn.addEventListener('click',()=>
+{
+myimg.style.width="600px"
+myimg.style.height="700px"
+})
+reset.addEventListener('click',()=>{
+    myimg.style.width="400px"
+})
+
+</script>
+</html>

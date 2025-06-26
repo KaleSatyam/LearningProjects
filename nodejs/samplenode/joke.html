@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(7, 88, 134);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "redressed",cursive;
+    }
+
+    .main {
+        height: 40vh;
+        width: 50vw;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 30vh auto;
+
+        
+    }
+
+    .headertext {
+        text-align: center;
+        padding: 30px 0px 0px 0px;
+    }
+
+    .joke {
+        
+        margin-top: 60px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+
+    .btn {
+        height: 40px;
+        width: 130px;
+        font-size: 20px;
+        background-color: rgb(253, 176, 9);
+        color: #fff;
+        border-radius: 10px;
+        border: 0;
+        outline: none;
+       cursor: pointer;
+        box-sizing: border-box;
+      
+        margin:100px 30vw 0px 20vw;
+        font-weight: 500;
+    }
+    .btn:hover{
+        background-color: rgb(245, 193, 81);
+        color: rgb(0, 0, 0);
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="headertext">
+            😎😎 hey See the joke here👇
+        </div>
+        <div class="joke" id="joke">
+            todays joke
+        </div>
+        <button class="btn" id="btnjoke">Next Joke</button>
+    </div>
+</body>
+    <script src="./joke.js"></script>
+</html>

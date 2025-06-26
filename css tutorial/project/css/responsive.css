@@ -1,0 +1,35 @@
+@media screen and (max-width:850px) {
+  /* body{
+      background: red;
+  } */
+  nav{
+      flex-direction: column;
+  }
+  .logo{
+      justify-content: center;
+  }
+  .btn{
+      font-size: 10px;
+  }
+  .container .slide img {
+    height: 10vh;
+    width: 85vw;
+}
+.search {
+
+    margin: 5px 4px;
+}
+.search input{
+    height: 20px;
+}
+.box1 img {
+    width: 120px;
+    height: 120px;
+}
+
+.cards {
+   
+    /* flex-wrap: wrap; */
+    overflow: scroll;
+}
+}

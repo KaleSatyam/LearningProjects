@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    margin: 13px;
+    font-family: 'Roboto Mono', monospace;
+}
+.center{
+    text-align: center;
+}
+body{
+    background-color: rgb(240, 236, 236);
+}

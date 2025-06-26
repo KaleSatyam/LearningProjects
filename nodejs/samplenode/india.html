@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 150px auto;
+        height: 400px;
+        width: 350px;
+        border-radius: 30px;
+
+    }
+
+    body {
+        background-color: black;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+       
+    }
+    .footer-social p{
+        text-align: center;
+        font-size: 15px;
+        box-sizing: border-box;
+        
+    }
+    .main-title{
+        font-weight: 400;
+        text-align: center;
+    }
+    .main-subtitle{
+        
+        text-align: center;
+    }
+    .footer-social{
+        text-align: center;
+           
+        box-sizing: border-box;
+        justify-content: space-between;
+        margin: 50px 20px 0px 20px;
+        border-top: 1px solid black;
+    }
+ 
+    .card{
+        box-sizing: border-box;
+    }
+ 
+</style>
+
+<body>
+    <div id="container">
+       
+
+    </div>
+</body>
+
+<script>
+
+    const main = document.querySelector('#container')
+
+    var request = new XMLHttpRequest();
+    request.open('GET', 'http://restcountries.eu/rest/v2/name/india')
+    request.send();
+
+    request.addEventListener('load', function () {
+
+        //  console.log(this.responseText)
+        const data = JSON.parse(this.responseText)
+        console.log(data[1])
+
+        var htmldata=` <div class="card">
+            <article class="main-card">
+                <div class="card-body">
+                    <img src="${data[1].flag} " height="100px" width="400px" alt="india image">
+                    <h1 class="main-title">
+                        ${data[1].name}
+                    </h1>
+                    <p class="main-subtitle">${data[1].capital}</p>
+                </div>
+            
+            
+                <div class="footer">
+                    <div class="footer-social">
+                        <h3 class="footer-text">
+                            ${data[1].languages[0].nativeName}
+                        </h3>
+                        <p >Language</p>
+                    </div>
+                    <div class="footer-social">
+                        <h3 class="footer-text">
+                            ${data[1].population}
+                        </h3>
+                        <p >Population</p>
+                    </div>
+                    <div class="footer-social">
+                        <h3 class="footer-text">
+                            ${data[1].demonym}
+                        </h3>
+                        <p >Demonym</p>
+                    </div>
+                </div>
+
+
+            </article>
+
+        </div>`;
+
+
+        main.insertAdjacentHTML('afterbegin',htmldata);
+    })
+
+</script>
+
+</html>
